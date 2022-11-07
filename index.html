@@ -1,0 +1,6 @@
+from bottle import Bottle, run
+app = Bottle()
+@app.route('/hello')
+def hello():
+    return "Hello World! by PABW 7B2 TAHUBULAT"
+run(app, host='localhost', port=8080)
